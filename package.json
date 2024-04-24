@@ -1,0 +1,26 @@
+{
+  "name": "app-auto-env",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild ./src/index.js --bundle --platform=node --outfile=dist/index.js --target=node17 && pkg dist/index.js --output build/app-auto"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@topcli/spinner": "^2.1.2",
+    "pdf-parser": "^1.0.5",
+    "pkg": "^5.8.1",
+    "playwright": "^1.43.1",
+    "puppeteer": "^22.7.0",
+    "readline-sync": "^1.4.10",
+    "selenium-webdriver": "^4.19.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.2",
+    "typescript": "^5.4.5"
+  }
+}
